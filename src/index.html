@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>React Test</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="/js/external/system.src.js"></script>
+    <script>
+      SystemJS.config({
+        baseURL: '/js',
+        map: {
+          'react': 'external/react.production.min.js'
+        }
+      });
+      System.import('app.js');
+    </script>
+  </body>
+</html>
