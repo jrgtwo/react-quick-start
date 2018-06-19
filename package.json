@@ -6,6 +6,15 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "babel": {
+    "presets": [
+      "@babel/env",
+      "@babel/react"
+    ],
+    "plugins": [
+      "transform-es2015-modules-systemjs"
+    ]
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {},
